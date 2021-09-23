@@ -88,6 +88,7 @@ namespace VendorTracker.Tests
       //Assert
       Assert.AreEqual(newVendor2, result);
     }
+    
     [TestMethod]
     public void AddOrder_AssociatesOrderWithVendor_OrderList()
     {
