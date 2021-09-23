@@ -39,19 +39,19 @@ namespace VendorTracker.Controllers
       return View(model);
     }
 
-    // // This one creates new Items within a given vendor, not new vendors:
-    // [HttpPost("/vendors/{vendorId}/orders")]
-    // public ActionResult Create(int vendorId, string orderDescription)
-    // {
-    //   Dictionary<string, object> model = new Dictionary<string, object>();
-    //   Vendor foundvendor = Vendor.Find(vendorId);
-    //   Order newOrder = new Order(OrderDescription);
-    //   foundvendor.AddItem(newOrder);
-    //   List<Order> vendorOrders = foundvendor.Orders;
-    //   model.Add("orders", vendorOrders);
-    //   model.Add("vendor", foundvendor);
-    //   return View("Show", model);
-    // }
+    
+    [HttpPost("/vendors/{vendorId}/orders")]
+    public ActionResult Create(int vendorId, string orderDescription)
+    {
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor foundvendor = Vendor.Find(vendorId);
+      Order newOrder = new Order(OrderDescription);
+      foundvendor.AddItem(newOrder);
+      List<Order> vendorOrders = foundvendor.Orders;
+      model.Add("orders", vendorOrders);
+      model.Add("vendor", foundvendor);
+      return View("Show", model);
+    }
 
   }
 }
