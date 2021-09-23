@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Vendor\Vendor.csproj" />  
+    <ProjectReference Include="..\VendorTracker\VendorTracker.csproj" />  
   </ItemGroup>
 
 </Project>
