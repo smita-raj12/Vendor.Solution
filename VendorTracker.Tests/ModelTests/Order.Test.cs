@@ -84,7 +84,7 @@ namespace VendorTracker.Tests
       CollectionAssert.AreEqual(newList, result);
     }
     [TestMethod]
-    public void GetId_ItemsInstantiateWithAnIdAndGetterReturns_Int()
+    public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
     {
       //Arrange
       string title = "Order title";
@@ -99,6 +99,28 @@ namespace VendorTracker.Tests
 
       //Assert
       Assert.AreEqual(1, result);
+    }
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      //Arrange
+     string title1 = "Order title";
+      string description1 = "Order Description";
+      string price1 = "Order price";
+      string date1 = "Order date";
+      string title2 = "Order for bread";
+      string description2 = "50 bread orders";
+      string price2 = "100";
+      string date2 = "today";
+      Order newOrder1 = new Order(title1,description1,price1,date1);
+      Order newOrder2 = new Order(title2,description2,price2,date2);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+
+      //Act
+      List<Order> result = Order.GetAll();
+
+      //Assert
+      CollectionAssert.AreEqual(newList, result);
     }
   }
 }    
