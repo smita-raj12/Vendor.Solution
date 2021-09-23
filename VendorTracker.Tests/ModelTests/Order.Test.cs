@@ -35,5 +35,37 @@ namespace VendorTracker.Tests
       Assert.AreEqual(price, resultPrice);
       Assert.AreEqual(date, resultDate);
     }
+    [TestMethod]
+    public void SetProprites_SetProprites_String()
+    {
+      //Arrange
+      string title = "Order title";
+      string description = "Order Description";
+      string price = "Order price";
+      string date = "Order date";
+      Order newOrder = new Order(title,description,price,date);
+
+      //Act
+      string updatedTitle = "Order for bread";
+      string updatedDescription = "50 bread orders";
+      string updatedPrice = "100";
+      string updatedDate = "today";
+      newOrder.Title = updatedTitle;
+      newOrder.Description = updatedDescription;
+      newOrder.Price = updatedPrice;
+      newOrder.Date = updatedDate;
+      
+      string resultTitle = newOrder.Title;
+      string resultDescription= newOrder.Description;
+      string resultPrice = newOrder.Price;
+      string resultDate = newOrder.Date;
+
+      //Assert
+      Assert.AreEqual(updatedTitle, resultTitle);
+      Assert.AreEqual(updatedDescription, resultDescription);
+      Assert.AreEqual(updatedPrice, resultPrice);
+      Assert.AreEqual(updatedDate, resultDate);
+    }
+
   }
 }    
