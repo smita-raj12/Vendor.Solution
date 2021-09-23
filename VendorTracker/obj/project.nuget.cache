@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KYkmOQ/fCEs6cuzEk/nUM6N5rqiZkdKWrJGpO8p6MFhlktKyfcdLmc8ECEzU+kcuaW9QukJ2uM4BCroragWlHA==",
+  "dgSpecHash": "qa+Si9qkDsgRsBQbm8eN02CVBwR3MqcgkgR9tr4+RGxf+SqNTF+KFwVhDI7ThWqqFJCzssXU4Wo2aiEMgukIYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rao34\\Desktop\\c#Programs\\Vendor.Solution\\Vendor\\Vendor.csproj",
+  "projectFilePath": "C:\\Users\\rao34\\Desktop\\c#Programs\\VendorTracker.Solution\\VendorTracker\\VendorTracker.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

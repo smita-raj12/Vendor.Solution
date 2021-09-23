@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rao34\\Desktop\\c#Programs\\Vendor.Solution\\Vendor\\Vendor.csproj",
-      "projectName": "Vendor",
-      "projectPath": "C:\\Users\\rao34\\Desktop\\c#Programs\\Vendor.Solution\\Vendor\\Vendor.csproj",
+      "projectUniqueName": "C:\\Users\\rao34\\Desktop\\c#Programs\\VendorTracker.Solution\\VendorTracker\\VendorTracker.csproj",
+      "projectName": "VendorTracker",
+      "projectPath": "C:\\Users\\rao34\\Desktop\\c#Programs\\VendorTracker.Solution\\VendorTracker\\VendorTracker.csproj",
       "packagesPath": "C:\\Users\\rao34\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rao34\\Desktop\\c#Programs\\Vendor.Solution\\Vendor\\obj\\",
+      "outputPath": "C:\\Users\\rao34\\Desktop\\c#Programs\\VendorTracker.Solution\\VendorTracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rao34\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "exwGogI9ZFKNcPj7QZp9YFl2PEwSDdztwhxvSF5uWaNswb+dPr2OfcNfP++pauOV6oM3Akb95CVDdlxhWegvcA==",
+  "dgSpecHash": "nampgHTOk81ITPjpD7nNrDR8UalEA6aEQgm9usu8GzFSvdTyvW5QIHz/mWFlbAkJegR31XRE1pQ2KxLZR/jmlQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rao34\\Desktop\\c#Programs\\Vendor.Solution\\Vendor.Tests\\Vendor.Test.csproj",
+  "projectFilePath": "C:\\Users\\rao34\\Desktop\\c#Programs\\VendorTracker.Solution\\VendorTracker.Tests\\VendorTracker.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rao34\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\rao34\\.nuget\\packages\\microsoft.net.test.sdk\\15.0.0\\microsoft.net.test.sdk.15.0.0.nupkg.sha512",
