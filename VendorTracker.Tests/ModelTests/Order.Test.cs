@@ -83,5 +83,22 @@ namespace VendorTracker.Tests
       // Assert
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void GetId_ItemsInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      //Arrange
+      string title = "Order title";
+      string description = "Order Description";
+      string price = "Order price";
+      string date = "Order date";
+
+      Order newOrder = new Order(title,description,price,date);
+
+      //Act
+      int result = newOrder.Id;
+
+      //Assert
+      Assert.AreEqual(1, result);
+    }
   }
 }    
