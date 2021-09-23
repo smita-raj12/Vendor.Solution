@@ -104,7 +104,7 @@ namespace VendorTracker.Tests
     public void GetAll_ReturnsOrders_OrderList()
     {
       //Arrange
-     string title1 = "Order title";
+      string title1 = "Order title";
       string description1 = "Order Description";
       string price1 = "Order price";
       string date1 = "Order date";
@@ -121,6 +121,27 @@ namespace VendorTracker.Tests
 
       //Assert
       CollectionAssert.AreEqual(newList, result);
+    }
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      //Arrange
+      string title1 = "Order title";
+      string description1 = "Order Description";
+      string price1 = "Order price";
+      string date1 = "Order date";
+      string title2 = "Order for bread";
+      string description2 = "50 bread orders";
+      string price2 = "100";
+      string date2 = "today";
+      Order newOrder1 = new Order(title1,description1,price1,date1);
+      Order newOrder2 = new Order(title2,description2,price2,date2);
+
+      //Act
+      Order result = Order.Find(2);
+
+      //Assert
+      Assert.AreEqual(newOrder2, result);
     }
   }
 }    
