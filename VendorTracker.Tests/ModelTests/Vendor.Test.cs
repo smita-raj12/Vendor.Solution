@@ -21,19 +21,21 @@ namespace VendorTracker.Tests
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
-  //   [TestMethod]
-  //   public void GetName_ReturnsName_String()
-  //   {
-  //     //Arrange
-  //     string name = "Test Vendor";
-  //     Vendor newVendor = new Vendor(name);
+    [TestMethod]
+    public void GetName_ReturnsName_String()
+    {
+      //Arrange
+      string name = "Test Vendor";
+      string description = "test description";
+      Vendor newVendor = new Vendor(name,description);
 
-  //     //Act
-  //     string result = newVendor.Name;
-
-  //     //Assert
-  //     Assert.AreEqual(name, result);
-  //   }
+      //Act
+      string result1 = newVendor.Name;
+      string result2 = newVendor.Description;
+      //Assert
+      Assert.AreEqual(name, result1);
+      Assert.AreEqual(description, result2);
+    }
 
   //   [TestMethod]
   //   public void GetId_ReturnsVendorId_Int()
