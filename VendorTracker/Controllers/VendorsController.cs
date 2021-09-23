@@ -28,16 +28,16 @@ namespace VendorTracker.Controllers
       return RedirectToAction("Index");
     }
 
-    // [HttpGet("/vendors/{id}")]
-    // public ActionResult Show(int id)
-    // {
-    //   Dictionary<string, object> model = new Dictionary<string, object>();
-    //   Vendor selectedvendor = Vendor.Find(id);
-    //   List<Order> vendorOrders = selectedvendor.Orders;
-    //   model.Add("vendor", selectedvendor);
-    //   model.Add("orders", vendorOrders);
-    //   return View(model);
-    // }
+    [HttpGet("/vendors/{id}")]
+    public ActionResult Show(int id)
+    {
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor selectedvendor = Vendor.Find(id);
+      List<Order> vendorOrders = selectedvendor.Orders;
+      model.Add("vendor", selectedvendor);
+      model.Add("orders", vendorOrders);
+      return View(model);
+    }
 
     // // This one creates new Items within a given vendor, not new vendors:
     // [HttpPost("/vendors/{vendorId}/orders")]
