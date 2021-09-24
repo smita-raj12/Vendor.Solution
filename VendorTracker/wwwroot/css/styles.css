@@ -1,56 +1,74 @@
-.h1{
+.h1
+{
   padding-top: 30px;
   color: brown;
   text-align: center;
 }
 
-.viewVendors{
+.viewVendors
+{
   padding-left: 30px;
   padding-top: 90px;
 }
 
-.vendor-h1{
+.vendor-h1
+{
   text-align: center;
   padding-top: 20px;
   color: blue;
   padding-bottom: 30px;
 }
 
-.vendor-h3{
+.vendor-h3
+{
   color: darkred;
 }
 
-.vendors-h3{
+.vendors-h3
+{
   padding-top: 20px;
   padding-left: 60px;
   padding-bottom: 50px;
 }
 
-.add-vender{
+.add-vender
+{
   padding-top: 20px;
   text-align: center;
 }
 
-.container{
+.container
+{
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.order-link{
+.order-link
+{
   padding-left: 30px;
   padding-bottom: 10px;
 }
 
-.p-class{
+.p-class
+{
   padding-left: 30px;
   padding-top: 40px;
 }
 
-.orderDetail-disp{
+.orderDetail-disp
+{
   padding-left: 40px;
   padding-top: 30px;
 }
 
-body{
+.delete
+{
+color: maroon;
+text-align: center;
+padding-top: 30px;
+padding-bottom: 40px;
+}
+body
+{
   background-color: rgb(245, 224, 199);
 }
