@@ -1,7 +1,19 @@
-<h1>Order Details: </h1>
+<div class ="orderDetail-disp">
+  <h3 class = "p-class">Order Details: </h3>
+  <p>Order for: @Model["vendor"].Name @Model["vendor"].Description </p>
+  <ul>
+    <li>Item: @Model["order"].Title</li>
+    <li>Description: @Model["order"].Description</li>
+    <li>Amount: @Model["order"].Price</li>
+    <li>Date: @Model["order"].Date</li>
+  </ul>
+  
+  <div class = "order-link">
+    <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
+    <a href='/vendors'>View all vendors</a>
+  </div>
+</div>
 
-<h2>@Model["order"].Description</h2>
-<h3>Vendor: @Model["vendor"].Name</h3>
-
-<a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
-<a href='/vendors'>View all vendors</a>
+@{
+  Layout = "_Layout";
+}

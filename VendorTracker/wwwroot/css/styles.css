@@ -46,3 +46,11 @@
   padding-top: 40px;
 }
 
+.orderDetail-disp{
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
+body{
+  background-color: rgb(245, 224, 199);
+}
