@@ -13,13 +13,14 @@
   {
     <h3 class="vendors-h3"><a href='/vendors/@v.Id'>@v.Name</a></h3>
   }
+  
   <form action="/orders/delete" method="post">
     <button type="submit" name="button">Clear All Items</button>
   </form>
 }
-
-<p><a href='/'>Back home</a></p>
-
+<div class="p-class">
+  <p><a href='/'>Back home</a></p>
+</div>
 @{
   Layout = "_Layout";
 }
