@@ -7,7 +7,6 @@ namespace VendorTracker.Controllers
 {
   public class VendorsController : Controller
   {
-
     [HttpGet("/vendors")]
     public ActionResult Index()
     {
@@ -38,7 +37,6 @@ namespace VendorTracker.Controllers
       model.Add("orders", vendorOrders);
       return View(model);
     }
-
     
     [HttpPost("/vendors/{vendorId}/orders")]
     public ActionResult Create(int vendorId, string orderTitle,string orderDescription, string orderPrice, string orderDate)
@@ -52,6 +50,5 @@ namespace VendorTracker.Controllers
       model.Add("vendor", foundvendor);
       return View("Show", model);
     }
-
   }
 }

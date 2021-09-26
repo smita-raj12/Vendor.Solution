@@ -6,18 +6,20 @@
 {
   <h3 class="vendor-h3">No vendors have been added yet!</h3>
 } 
+
 @if (@Model.Count >= 1)
 {
   @foreach (Vendor v in Model)
   {
     <h3 class="vendors-h3"><a href='/vendors/@v.Id'>@v.Name</a></h3>
   }
-
   <form action="/orders/delete" method="post">
     <button type="submit" name="button">Clear All Items</button>
   </form>
 }
+
 <p><a href='/'>Back home</a></p>
+
 @{
   Layout = "_Layout";
 }

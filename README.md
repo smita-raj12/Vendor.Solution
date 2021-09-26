@@ -29,7 +29,7 @@ Pierre Bakery wants to keep track of its vendors and orders,  so this MVC applic
 
 ## Setup/Installation Requirements
 
-1. Download or clone the [https://github.com/smita-raj12/VendorTracker.Solution](https://github.com/smita-raj12/VendorTracker.Solution) to your local machine.
+1. Download or clone the [https://github.com/smita-raj12/Vendor.Solution](https://github.com/smita-raj12/Vendor.Solution) to your local machine.
 
 2. Download any Code Editor for your choice. (Here I used VSCode).
 
